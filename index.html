@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+<style>
+body{
+  font-family: fantasy;
+  font-weight: bold;
+  text-align: center;
+}
+label{
+  font-size: 29;
+}
+
+
+form{
+background-color: purple;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<h1 id="title"> Tell me about 70's punk</h1>
+<p id="description">
+  This is a survey where you can tell me about which band you like.
+</p>
+<form id="survey-form">
+<label id="name-label">Name:</label>
+  <input type="text" name="name" id="name" required placeholder="first name"><br>
+<label id="email-label">Email:</label>
+   <input type="email" name="email" id="email" required placeholder="email"><br>
+<label id="number-label">Number:</label>
+ <input type="number" name="number" id="number" min="0" max="10" required placeholder="#"><br>
+
+ <label for="bands">Choose a Band:</label><br>
+
+<select id="dropdown" name="bands">
+      <option value="new_york_dolls">New York Dolls</option>
+      <option value="the_ramones">The Ramones</option>
+      <option value="blondie">Blondie</option>
+      <option value="talking_heads">Talking Heads</option>
+    </select><br>
+
+    <label for="bands">Gender:</label><br>
+
+    <input type="radio" id="male" name="gender" value="male">
+   <label for="male">Male</label><br>
+   <input type="radio" id="female" name="gender" value="female">
+   <label for="female">Female</label><br>
+   <input type="radio" id="other" name="gender" value="other">
+   <label for="other">Other</label> <br>
+
+   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I like 70's punk</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I like 80's punk</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I like 90's punk</label><br>
+
+<textarea placeholder="Comments"></textarea><br>
+<input type="submit" id="submit">
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+</body>
+
+
+</html>
